@@ -108,7 +108,7 @@ try
 catch ( Exception $e )
 {
     echo 'AN ERROR HAS OCCURED:' . PHP_EOL;
-    echo $e->getMEssage() . PHP_EOL;
+    echo $e->getMessage() . PHP_EOL;
     return false;
 }
 
