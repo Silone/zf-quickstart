@@ -1,0 +1,13 @@
+<p>
+	<a href="<?= $this->url(array('controller' => 'guestbook', 'action' => 'sign'), 'default', true) ?>">
+		Sign our Guestbook
+	</a>
+</p>
+
+<h2>Guestbook Entries</h2>
+<dl>
+	<? foreach ( $this->entries as $entry ) : ?>
+    	<dt><?= $this->escape($entry->email) ?></dt>
+    	<dd><?= $this->escape($entry->comment) ?></dd>
+	<? endforeach; ?>
+</dl>

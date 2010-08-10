@@ -92,8 +92,9 @@ class Application_Model_GuestbookMapper
      */
     public function fetchAll()
     {
-        $resultSet = $this->getDbTable()->fetchAll();
+        $dbTable = $this->getDbTable();
         
+        $resultSet = $dbTable->fetchAll();
         $entries = array();
         
         foreach ( $resultSet as $row )
