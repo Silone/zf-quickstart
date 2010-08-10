@@ -7,7 +7,7 @@
 // Initialize the application path and autoloading
 
 defined('APPLICATION_PATH')
-    || define('APPLICATION_PATH', dirname(__FILE__) . '/../application');
+    || define('APPLICATION_PATH', dirname(__FILE__) . '/../../application');
    
 set_include_path(implode(PATH_SEPARATOR, array(
     APPLICATION_PATH . '/../library',
